@@ -1,14 +1,14 @@
 {
   "kind": "collectionType",
-  "collectionName": "authors",
+  "collectionName": "tags",
   "info": {
-    "singularName": "author",
-    "pluralName": "authors",
-    "displayName": "Author",
-    "description": "Create authors for your content"
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "tag",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,7 +19,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::post.post",
-      "mappedBy": "authors"
+      "inversedBy": "tags"
     }
   }
 }
